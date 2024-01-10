@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-dark: #5651e5;
+    --primary-light: #709dff;
+}
+.icon {
+    color: var(--primary-dark);
+}
+@layer base {
+    body {
+        @apply font-roboto
+    }
+    li {
+        @apply cursor-pointer p-3
+    }
+    h1 {
+        @apply text-3xl md:text-5xl font-bold
+    }
+    h3 {
+        @apply text-xl md:text-3xl font-bold
+    }
+    .icon {
+        @apply cursor-pointer
+    }
+    button {
+        @apply p-3 text-white bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] block rounded-lg my-3
+    }
+}
